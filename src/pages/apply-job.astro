@@ -14,23 +14,24 @@ import Layout from '../layouts/Layout.astro';
         </p>
       </div>
       <!-- Job Application Form Card -->
+      <!-- Job Application Form Card -->
       <div class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-[#e7ecf3] dark:border-slate-800 p-8 md:p-10">
-        <form action="#" class="space-y-6" method="POST">
+        <form id="job-application-form" class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Full Name -->
             <div class="flex flex-col gap-2">
               <label class="text-sm font-semibold text-[#0d131b] dark:text-slate-200">Full Name</label>
-              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white" placeholder="Enter your full name" required type="text" />
+              <input name="fullName" class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white" placeholder="Enter your full name" required type="text" />
             </div>
             <!-- Mobile Number -->
             <div class="flex flex-col gap-2">
               <label class="text-sm font-semibold text-[#0d131b] dark:text-slate-200">Mobile Number</label>
-              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white" placeholder="Enter 10-digit mobile number" required type="tel" />
+              <input name="mobileNumber" class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white" placeholder="Enter 10-digit mobile number" required type="tel" />
             </div>
             <!-- Job Category -->
             <div class="flex flex-col gap-2">
               <label class="text-sm font-semibold text-[#0d131b] dark:text-slate-200">Job Category</label>
-              <select class="form-select w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white">
+              <select name="jobCategory" class="form-select w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white">
                 <option disabled selected value="">Select category</option>
                 <option>Machine Operator</option>
                 <option>Helper / Unskilled Labor</option>
@@ -45,7 +46,7 @@ import Layout from '../layouts/Layout.astro';
             <!-- Experience -->
             <div class="flex flex-col gap-2">
               <label class="text-sm font-semibold text-[#0d131b] dark:text-slate-200">Experience</label>
-              <select class="form-select w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white">
+              <select name="experience" class="form-select w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white">
                 <option disabled selected value="">Experience level</option>
                 <option>Fresher (0 Years)</option>
                 <option>1-2 Years</option>
@@ -56,7 +57,7 @@ import Layout from '../layouts/Layout.astro';
             <!-- Preferred Location -->
             <div class="flex flex-col gap-2">
               <label class="text-sm font-semibold text-[#0d131b] dark:text-slate-200">Preferred Location</label>
-              <select class="form-select w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white">
+              <select name="preferredLocation" class="form-select w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white">
                 <option disabled selected value="">Choose location</option>
                 <option>Pithampur Industrial Area</option>
                 <option>Indore City</option>
@@ -67,7 +68,7 @@ import Layout from '../layouts/Layout.astro';
             <!-- Expected Salary -->
             <div class="flex flex-col gap-2">
               <label class="text-sm font-semibold text-[#0d131b] dark:text-slate-200">Expected Salary (Per Month)</label>
-              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white" placeholder="e.g. ₹15,000 - ₹20,000" type="text" />
+              <input name="expectedSalary" class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white" placeholder="e.g. ₹15,000 - ₹20,000" type="text" />
             </div>
           </div>
           <!-- Immediate Joining -->
@@ -75,11 +76,11 @@ import Layout from '../layouts/Layout.astro';
             <label class="text-sm font-semibold text-[#0d131b] dark:text-slate-200 block mb-3">Can you join immediately?</label>
             <div class="flex gap-6">
               <label class="flex items-center gap-2 cursor-pointer group">
-                <input checked class="form-radio text-primary focus:ring-primary border-[#cfd9e7] dark:border-slate-700 dark:bg-slate-800" name="joining" type="radio" value="yes" />
+                <input checked class="form-radio text-primary focus:ring-primary border-[#cfd9e7] dark:border-slate-700 dark:bg-slate-800" name="immediateJoin" type="radio" value="yes" />
                 <span class="text-base text-slate-700 dark:text-slate-300">Yes</span>
               </label>
               <label class="flex items-center gap-2 cursor-pointer group">
-                <input class="form-radio text-primary focus:ring-primary border-[#cfd9e7] dark:border-slate-700 dark:bg-slate-800" name="joining" type="radio" value="no" />
+                <input class="form-radio text-primary focus:ring-primary border-[#cfd9e7] dark:border-slate-700 dark:bg-slate-800" name="immediateJoin" type="radio" value="no" />
                 <span class="text-base text-slate-700 dark:text-slate-300">No</span>
               </label>
             </div>
@@ -118,3 +119,24 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </main>
 </Layout>
+
+<script>
+  // Get ENV variable from build time if needed, OR assume it is set in window via define:vars if we did that.
+  // BUT the prompt says "assume variable is already defined in environment". 
+  // In Astro, we can read import.meta.env.PUBLIC_... or pass it down. 
+  // We will pass it via define:vars in this script block.
+  
+  import { attachFormHandler } from '../scripts/formHandler.js';
+
+  const GOOGLE_APPS_SCRIPT_URL = import.meta.env.GOOGLE_APPS_SCRIPT_URL || import.meta.env.PUBLIC_GOOGLE_APPS_SCRIPT_URL || '';
+
+  if (!GOOGLE_APPS_SCRIPT_URL && import.meta.env.PROD) {
+    console.error("GOOGLE_APPS_SCRIPT_URL is missing in environment variables!");
+  }
+
+  attachFormHandler({
+    formId: 'job-application-form',
+    url: import.meta.env.PUBLIC_GOOGLE_APPS_SCRIPT_URL,
+    formType: 'job'
+  });
+</script>

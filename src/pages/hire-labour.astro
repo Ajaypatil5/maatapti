@@ -18,49 +18,49 @@ import Layout from '../layouts/Layout.astro';
     <!-- Recruitment Form Section -->
     <div class="max-w-[960px] mx-auto px-4 pb-20">
       <div class="bg-white dark:bg-slate-900 border border-[#e7ecf3] dark:border-slate-800 rounded-xl shadow-xl p-6 md:p-10">
-        <form action="#" class="space-y-8" method="POST">
+        <form id="recruitment-form" class="space-y-8">
           <!-- Form Section: Company Info -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="flex flex-col gap-2">
               <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Company Name</label>
-              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="Enter company name" required type="text" />
+              <input name="companyName" class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="Enter company name" required type="text" />
             </div>
             <div class="flex flex-col gap-2">
               <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Contact Person Name</label>
-              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="Enter name" required type="text" />
+              <input name="contactPersonName" class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="Enter name" required type="text" />
             </div>
           </div>
           <!-- Form Section: Contact & Role -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="flex flex-col gap-2">
               <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Mobile Number</label>
-              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="+91 00000-00000" required type="tel" />
+              <input name="mobileNumber" class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="+91 00000-00000" required type="tel" />
             </div>
             <div class="flex flex-col gap-2">
               <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Job Role Required</label>
-              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="e.g. Fitter, Welder, Helper" required type="text" />
+              <input name="jobRoleRequired" class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="e.g. Fitter, Welder, Helper" required type="text" />
             </div>
           </div>
           <!-- Form Section: Logistics -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="flex flex-col gap-2">
               <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Number of Workers</label>
-              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" min="1" placeholder="e.g. 50" required type="number" />
+              <input name="numberOfWorkers" class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" min="1" placeholder="e.g. 50" required type="number" />
             </div>
             <div class="flex flex-col gap-2">
               <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Job Location</label>
-              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="Pithampur or Indore" required type="text" />
+              <input name="jobLocation" class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="Pithampur or Indore" required type="text" />
             </div>
           </div>
           <!-- Form Section: Details -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="flex flex-col gap-2">
               <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Salary Range (Monthly)</label>
-              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="e.g. ₹15,000 - ₹20,000" type="text" />
+              <input name="salaryRange" class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="e.g. ₹15,000 - ₹20,000" type="text" />
             </div>
             <div class="flex flex-col gap-2">
               <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Joining Date</label>
-              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" required type="date" />
+              <input name="joiningDate" class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" required type="date" />
             </div>
           </div>
           <!-- Accommodation Toggle -->
@@ -68,11 +68,11 @@ import Layout from '../layouts/Layout.astro';
             <p class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Accommodation Provided?</p>
             <div class="flex gap-6">
               <label class="flex items-center gap-2 cursor-pointer group">
-                <input class="text-primary focus:ring-primary border-slate-300 dark:border-slate-600 dark:bg-slate-800" name="accommodation" type="radio" value="yes" />
+                <input class="text-primary focus:ring-primary border-slate-300 dark:border-slate-600 dark:bg-slate-800" name="accommodationProvided" type="radio" value="yes" />
                 <span class="text-[#4c6c9a] dark:text-slate-300 font-medium group-hover:text-primary">Yes</span>
               </label>
               <label class="flex items-center gap-2 cursor-pointer group">
-                <input class="text-primary focus:ring-primary border-slate-300 dark:border-slate-600 dark:bg-slate-800" name="accommodation" type="radio" value="no" />
+                <input class="text-primary focus:ring-primary border-slate-300 dark:border-slate-600 dark:bg-slate-800" name="accommodationProvided" type="radio" value="no" />
                 <span class="text-[#4c6c9a] dark:text-slate-300 font-medium group-hover:text-primary">No</span>
               </label>
             </div>
@@ -102,3 +102,13 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </main>
 </Layout>
+
+<script>
+  import { attachFormHandler } from '../scripts/formHandler.js';
+
+  attachFormHandler({
+    formId: 'recruitment-form',
+    url: import.meta.env.PUBLIC_GOOGLE_APPS_SCRIPT_URL,
+    formType: 'recruiter'
+  });
+</script>
