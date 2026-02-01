@@ -80,54 +80,37 @@
   </div>
 </div>
 
-<script is:inline>
-  (function() {
-    const menuBtn = document.getElementById('mobile-menu-btn');
-    const closeBtn = document.getElementById('close-menu-btn');
-    const overlay = document.getElementById('mobile-menu-overlay');
-    const backdrop = document.getElementById('mobile-menu-backdrop');
-    const sidebar = document.getElementById('mobile-menu-sidebar');
-    const links = sidebar ? sidebar.querySelectorAll('a') : [];
+<script is:inline type="module">
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const closeBtn = document.getElementById('close-menu-btn');
+  const overlay = document.getElementById('mobile-menu-overlay');
+  const backdrop = document.getElementById('mobile-menu-backdrop');
+  const sidebar = document.getElementById('mobile-menu-sidebar');
+  const links = sidebar ? sidebar.querySelectorAll('a') : [];
 
-    function openMenu() {
-      if (!overlay || !sidebar || !backdrop) return;
-      
-      // 1. Show the container
-      overlay.classList.remove('hidden');
-      
-      // 2. Animate in (using slight delay to allow display:block to apply)
-      requestAnimationFrame(() => {
-        backdrop.classList.remove('opacity-0');
-        sidebar.classList.remove('translate-x-full');
-      });
-
-      // 3. Lock body scroll (Using a class that doesn't hide scrollbar or handling padding if needed)
-      // For now, simpler approach: just show overlay on top. 
-      // If we want to strictly prevent background scroll without layout shift, we need more complex logic (padding adjustment).
-      // Given the user feedback about "shift", removing the overflow:hidden is the quickest fix for the jump.
-      // document.body.style.overflow = 'hidden'; 
-    }
-
-    function closeMenu() {
-      if (!overlay || !sidebar || !backdrop) return;
-
-      // 1. Animate out
-      backdrop.classList.add('opacity-0');
-      sidebar.classList.add('translate-x-full');
-
-      // 2. Hide container after transition
-      setTimeout(() => {
-        overlay.classList.add('hidden');
-        // document.body.style.overflow = '';
-      }, 300); // Match transition duration
-    }
-
-    if (menuBtn) menuBtn.addEventListener('click', openMenu);
-    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
-    if (backdrop) backdrop.addEventListener('click', closeMenu);
-
-    links.forEach(link => {
-      link.addEventListener('click', closeMenu);
+  function openMenu() {
+    if (!overlay || !sidebar || !backdrop) return;
+    overlay.classList.remove('hidden');
+    requestAnimationFrame(() => {
+      backdrop.classList.remove('opacity-0');
+      sidebar.classList.remove('translate-x-full');
     });
-  })();
+  }
+
+  function closeMenu() {
+    if (!overlay || !sidebar || !backdrop) return;
+    backdrop.classList.add('opacity-0');
+    sidebar.classList.add('translate-x-full');
+    setTimeout(() => {
+      overlay.classList.add('hidden');
+    }, 300);
+  }
+
+  if (menuBtn) menuBtn.addEventListener('click', openMenu);
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  if (backdrop) backdrop.addEventListener('click', closeMenu);
+
+  links.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
 </script>

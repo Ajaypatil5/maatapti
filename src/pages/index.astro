@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import heroImage from '../assets/hero-factory.jpg';
 ---
 
 <Layout title="Maa Tapti Enterprises - Industrial Labour Solutions">
@@ -32,7 +34,16 @@ import Layout from '../layouts/Layout.astro';
           <div class="w-full @[864px]:w-1/2 order-1 @[864px]:order-2">
             <div class="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl group">
               <div class="absolute inset-0 bg-primary/10 mix-blend-multiply transition-opacity group-hover:opacity-0"></div>
-              <img class="w-full h-full object-cover" alt="Modern industrial factory floor with workers in safety gear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFiOEUfUpUK4fn5LiWkNxRWX5g7CTnO8iOeFzy3o1bO8u_m2yr6Ze1-BZrhY0JCyAJ8KIOU2pGng3Qoz-FnIGdRX2o4RbDuvktubQaQUgMBVpSflII7QihQosy-9M3zdv1Fo6Jt_d7hxN7Viux_K9wCDZXTQBOuM9YYWyLHi3oGa2-JQw0eR5xLuGWgPcoe3Vpv6UEXQVBC6HKyqKUB7WisD6H0LCCcit9akpGId1yOlcnGfxckNBaQ89GbwSK-43Und15MIdpz0U" />
+              <Image 
+                class="w-full h-full object-cover" 
+                src={heroImage} 
+                alt="Modern industrial factory floor with workers in safety gear"
+                fetchpriority="high"
+                loading="eager"
+                decoding="async"
+                width={800}
+                height={600} 
+              />
             </div>
           </div>
         </div>

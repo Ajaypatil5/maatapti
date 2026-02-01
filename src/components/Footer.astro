@@ -1,5 +1,7 @@
 ---
 const year = new Date().getFullYear();
+import { Image } from 'astro:assets';
+import locationMap from '../assets/location-map.jpg';
 ---
 <footer class="bg-white dark:bg-background-dark border-t border-[#e7ecf3] dark:border-slate-800 pt-20 pb-10" id="footer">
   <div class="max-w-[1280px] mx-auto px-4 lg:px-10">
@@ -47,7 +49,15 @@ const year = new Date().getFullYear();
       <div>
         <h5 class="text-[#0d131b] dark:text-white font-bold mb-6">Location Map</h5>
         <div class="rounded-xl overflow-hidden h-32 border border-[#cfd9e7] dark:border-slate-800">
-          <img class="w-full h-full object-cover" alt="Map showing Pithampur Indore region" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnG6V-WpU23L6lR2ZgjQ7tidqy2UpaF7AycgIMhC5LBdjj8lak6RyH2XKFQlQuHv9HJUPQW3gvcQLlkd9s9B80yH5jBXnZ7jhmt8dIvemLLKln5Cc4c-vwBAnBedU5UhqnEBLMMBXRyjJ_98NAFp36XWa8jRyftKk62BEtfMfk_GwhUfKqO98wBunEmLT8-OFM2bU9uCMP8XdLneqf0YMKGmIfOW9757i117sljotkZvm1mMwYESBCt2NmUNzcqZGgzkNFk9fXg9M" />
+          <Image 
+            class="w-full h-full object-cover" 
+            src={locationMap} 
+            alt="Map showing Pithampur Indore region" 
+            loading="lazy" 
+            decoding="async" 
+            width={600} 
+            height={400} 
+          />
         </div>
       </div>
     </div>
