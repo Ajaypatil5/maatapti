@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact - Maa Tapti Enterprises">
+  <main class="flex-1 mx-auto max-w-[1280px] w-full px-4 md:px-10 py-12">
+    <!-- Headline Section -->
+    <div class="mb-12">
+      <h1 class="text-[#0d131b] dark:text-white tracking-tight text-[40px] font-extrabold leading-tight text-center pb-3 pt-6">
+        Contact Us
+      </h1>
+      <p class="text-[#4c6c9a] dark:text-slate-400 text-lg font-normal leading-relaxed text-center max-w-[700px] mx-auto px-4">
+        Reliable industrial labour supply for Pithampur and Indore regions. Get in touch with us for expert staffing solutions tailored to your manufacturing needs.
+      </p>
+    </div>
+    <!-- Contact Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <!-- Left Column: Info and Buttons -->
+      <div class="flex flex-col gap-8">
+        <!-- Direct Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a class="flex flex-1 min-w-[180px] cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-xl h-16 px-6 bg-primary text-white text-lg font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform" href="tel:+919876543210">
+            <span class="material-symbols-outlined">call</span>
+            <span class="truncate">Call Now</span>
+          </a>
+          <a class="flex flex-1 min-w-[180px] cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-xl h-16 px-6 bg-[#25D366] text-white text-lg font-bold shadow-lg shadow-[#25D366]/20 hover:scale-[1.02] transition-transform" href="https://wa.me/919876543210">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="truncate">WhatsApp Now</span>
+          </a>
+        </div>
+        <!-- Description List / Business Info Card -->
+        <div class="bg-white dark:bg-slate-900/50 border border-[#e7ecf3] dark:border-slate-800 rounded-xl overflow-hidden">
+          <div class="p-6 md:p-8 space-y-0">
+            <!-- Row 1 -->
+            <div class="grid grid-cols-[35%_1fr] py-5 border-b border-[#f0f3f7] dark:border-slate-800">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-xl">business</span>
+                <p class="text-[#4c6c9a] dark:text-slate-400 text-sm font-semibold uppercase tracking-wider">Business</p>
+              </div>
+              <p class="text-[#0d131b] dark:text-white text-base font-medium">Maa Tapti Enterprises</p>
+            </div>
+            <!-- Row 2 -->
+            <div class="grid grid-cols-[35%_1fr] py-5 border-b border-[#f0f3f7] dark:border-slate-800">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-xl">location_on</span>
+                <p class="text-[#4c6c9a] dark:text-slate-400 text-sm font-semibold uppercase tracking-wider">Address</p>
+              </div>
+              <p class="text-[#0d131b] dark:text-white text-base font-medium">
+                Pithampur Industrial Area, Sector 3, Indore, Madhya Pradesh 454775
+              </p>
+            </div>
+            <!-- Row 3 -->
+            <div class="grid grid-cols-[35%_1fr] py-5">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-xl">map</span>
+                <p class="text-[#4c6c9a] dark:text-slate-400 text-sm font-semibold uppercase tracking-wider">Service Area</p>
+              </div>
+              <p class="text-[#0d131b] dark:text-white text-base font-medium">
+                Pithampur, Indore, and surrounding industrial belts (SEZ, Sector 1-3)
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Availability Note -->
+        <div class="p-5 rounded-lg bg-primary/5 dark:bg-primary/10 border border-primary/20 flex gap-4 items-start">
+          <span class="material-symbols-outlined text-primary">info</span>
+          <div>
+            <p class="text-sm font-semibold text-primary mb-1">Operating Hours</p>
+            <p class="text-sm text-[#4c6c9a] dark:text-slate-400">Available 24/7 for emergency labour requirements and shifts coordination.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Right Column: Map Placeholder -->
+      <div class="flex flex-col h-full min-h-[400px]">
+        <div class="flex-1 bg-slate-200 dark:bg-slate-800 rounded-2xl overflow-hidden relative group border border-[#e7ecf3] dark:border-slate-800">
+          <!-- Abstract Industrial/Map Pattern as Background -->
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: linear-gradient(rgba(19, 109, 236, 0.1), rgba(19, 109, 236, 0.1)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1Vz_JA8EJiCaKqKFx_pkcRViI3lsCo18NBHNNU0rGb3TMx68J_qv1XAXnTJG5G1WmPju05pTwa1Q6uObs_urjk_S66tijHm3XQyLNjR4foUQ63cbQiBIm84x4RfPMcG6v7l5FVv518HBaIJ7cgh3QjGnLJa6OgkOp2YpqD7_vGPMDybEe50_rPZ6331CyQeN8VoAWm2uD9grR4mhPXQy-C3UuuwBY6K-HoyKs95XLybhjZ0ohx84jByY32BJfKY21KZnHOy2FZak');">
+          </div>
+          <!-- Overlay Details -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="bg-white/95 dark:bg-slate-900/95 p-6 rounded-xl shadow-2xl max-w-[300px] text-center">
+              <span class="material-symbols-outlined text-primary text-4xl mb-2">location_on</span>
+              <h3 class="font-bold text-lg mb-1">Find Us In Pithampur</h3>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Strategically located at the heart of MP's industrial hub.</p>
+              <button class="w-full py-2 bg-primary text-white rounded-lg text-sm font-bold">Open in Google Maps</button>
+            </div>
+          </div>
+          <!-- Location Tag -->
+          <div class="absolute bottom-4 left-4 bg-primary px-3 py-1 rounded-full text-white text-xs font-bold uppercase tracking-widest shadow-lg">
+            Indore Region
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Hire Labour - Maa Tapti Enterprises">
+  <main class="flex-1">
+    <!-- Page Header -->
+    <div class="max-w-[960px] mx-auto pt-12 pb-6 px-4">
+      <div class="flex flex-col gap-3 text-center md:text-left">
+        <h1 class="text-[#0d131b] dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-tight">
+          Hire Labour for Your Company
+        </h1>
+        <p class="text-[#4c6c9a] dark:text-slate-400 text-lg font-normal">
+          Submit your labour requirement and get reliable workers quickly. Serving Pithampur and Indore regions.
+        </p>
+      </div>
+    </div>
+    <!-- Recruitment Form Section -->
+    <div class="max-w-[960px] mx-auto px-4 pb-20">
+      <div class="bg-white dark:bg-slate-900 border border-[#e7ecf3] dark:border-slate-800 rounded-xl shadow-xl p-6 md:p-10">
+        <form action="#" class="space-y-8" method="POST">
+          <!-- Form Section: Company Info -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex flex-col gap-2">
+              <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Company Name</label>
+              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="Enter company name" required type="text" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Contact Person Name</label>
+              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="Enter name" required type="text" />
+            </div>
+          </div>
+          <!-- Form Section: Contact & Role -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex flex-col gap-2">
+              <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Mobile Number</label>
+              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="+91 00000-00000" required type="tel" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Job Role Required</label>
+              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="e.g. Fitter, Welder, Helper" required type="text" />
+            </div>
+          </div>
+          <!-- Form Section: Logistics -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex flex-col gap-2">
+              <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Number of Workers</label>
+              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" min="1" placeholder="e.g. 50" required type="number" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Job Location</label>
+              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="Pithampur or Indore" required type="text" />
+            </div>
+          </div>
+          <!-- Form Section: Details -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex flex-col gap-2">
+              <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Salary Range (Monthly)</label>
+              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" placeholder="e.g. ₹15,000 - ₹20,000" type="text" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Joining Date</label>
+              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-[#0d131b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary h-14 px-4 text-base transition-all" required type="date" />
+            </div>
+          </div>
+          <!-- Accommodation Toggle -->
+          <div class="flex flex-col gap-4">
+            <p class="text-[#0d131b] dark:text-slate-200 text-base font-semibold">Accommodation Provided?</p>
+            <div class="flex gap-6">
+              <label class="flex items-center gap-2 cursor-pointer group">
+                <input class="text-primary focus:ring-primary border-slate-300 dark:border-slate-600 dark:bg-slate-800" name="accommodation" type="radio" value="yes" />
+                <span class="text-[#4c6c9a] dark:text-slate-300 font-medium group-hover:text-primary">Yes</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer group">
+                <input class="text-primary focus:ring-primary border-slate-300 dark:border-slate-600 dark:bg-slate-800" name="accommodation" type="radio" value="no" />
+                <span class="text-[#4c6c9a] dark:text-slate-300 font-medium group-hover:text-primary">No</span>
+              </label>
+            </div>
+          </div>
+          <!-- Submit Actions -->
+          <div class="pt-4 space-y-4">
+            <button class="w-full flex items-center justify-center rounded-lg h-14 bg-primary text-white text-lg font-bold shadow-xl shadow-primary/25 hover:bg-primary/90 hover:-translate-y-0.5 transition-all" type="submit">
+              Request Labour
+            </button>
+            <div class="flex flex-col items-center gap-2 pt-2">
+              <p class="text-[#4c6c9a] dark:text-slate-400 text-sm font-medium">For urgent requirements, please call or WhatsApp us directly.</p>
+              <div class="flex gap-4">
+                <a class="flex items-center gap-1 text-primary hover:underline font-bold" href="tel:+919876543210">
+                  <span class="material-symbols-outlined text-base">call</span>
+                  +91 98765 43210
+                </a>
+                <span class="text-slate-300 dark:text-slate-700">|</span>
+                <a class="flex items-center gap-1 text-green-600 hover:underline font-bold" href="https://wa.me/919876543210">
+                  <span class="material-symbols-outlined text-base">chat</span>
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</Layout>

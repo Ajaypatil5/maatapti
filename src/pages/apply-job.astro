@@ -1,0 +1,120 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Apply for Job - Maa Tapti Enterprises">
+  <main class="flex-grow py-12 px-4">
+    <div class="max-w-[800px] mx-auto">
+      <!-- Header Section -->
+      <div class="text-center mb-10">
+        <h1 class="text-[#0d131b] dark:text-white text-3xl md:text-4xl font-bold tracking-tight mb-4">Apply for a Job</h1>
+        <p class="text-slate-600 dark:text-slate-400 text-lg max-w-xl mx-auto leading-relaxed">
+          Fill one simple form to apply for industrial and factory jobs. <br class="hidden md:block" />
+          <span class="font-semibold text-primary">No registration. No fees.</span>
+        </p>
+      </div>
+      <!-- Job Application Form Card -->
+      <div class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-[#e7ecf3] dark:border-slate-800 p-8 md:p-10">
+        <form action="#" class="space-y-6" method="POST">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Full Name -->
+            <div class="flex flex-col gap-2">
+              <label class="text-sm font-semibold text-[#0d131b] dark:text-slate-200">Full Name</label>
+              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white" placeholder="Enter your full name" required type="text" />
+            </div>
+            <!-- Mobile Number -->
+            <div class="flex flex-col gap-2">
+              <label class="text-sm font-semibold text-[#0d131b] dark:text-slate-200">Mobile Number</label>
+              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white" placeholder="Enter 10-digit mobile number" required type="tel" />
+            </div>
+            <!-- Job Category -->
+            <div class="flex flex-col gap-2">
+              <label class="text-sm font-semibold text-[#0d131b] dark:text-slate-200">Job Category</label>
+              <select class="form-select w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white">
+                <option disabled selected value="">Select category</option>
+                <option>Machine Operator</option>
+                <option>Helper / Unskilled Labor</option>
+                <option>Quality Control</option>
+                <option>Production Supervisor</option>
+                <option>Maintenance Technician</option>
+                <option>Warehouse / Loader</option>
+                <option>Electrician</option>
+                <option>Welder</option>
+              </select>
+            </div>
+            <!-- Experience -->
+            <div class="flex flex-col gap-2">
+              <label class="text-sm font-semibold text-[#0d131b] dark:text-slate-200">Experience</label>
+              <select class="form-select w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white">
+                <option disabled selected value="">Experience level</option>
+                <option>Fresher (0 Years)</option>
+                <option>1-2 Years</option>
+                <option>2-5 Years</option>
+                <option>5+ Years</option>
+              </select>
+            </div>
+            <!-- Preferred Location -->
+            <div class="flex flex-col gap-2">
+              <label class="text-sm font-semibold text-[#0d131b] dark:text-slate-200">Preferred Location</label>
+              <select class="form-select w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white">
+                <option disabled selected value="">Choose location</option>
+                <option>Pithampur Industrial Area</option>
+                <option>Indore City</option>
+                <option>Sanaswad / Dewas</option>
+                <option>Any (Either Pithampur or Indore)</option>
+              </select>
+            </div>
+            <!-- Expected Salary -->
+            <div class="flex flex-col gap-2">
+              <label class="text-sm font-semibold text-[#0d131b] dark:text-slate-200">Expected Salary (Per Month)</label>
+              <input class="form-input w-full rounded-lg border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 h-12 px-4 text-base focus:ring-primary focus:border-primary dark:text-white" placeholder="e.g. ₹15,000 - ₹20,000" type="text" />
+            </div>
+          </div>
+          <!-- Immediate Joining -->
+          <div class="pt-2">
+            <label class="text-sm font-semibold text-[#0d131b] dark:text-slate-200 block mb-3">Can you join immediately?</label>
+            <div class="flex gap-6">
+              <label class="flex items-center gap-2 cursor-pointer group">
+                <input checked class="form-radio text-primary focus:ring-primary border-[#cfd9e7] dark:border-slate-700 dark:bg-slate-800" name="joining" type="radio" value="yes" />
+                <span class="text-base text-slate-700 dark:text-slate-300">Yes</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer group">
+                <input class="form-radio text-primary focus:ring-primary border-[#cfd9e7] dark:border-slate-700 dark:bg-slate-800" name="joining" type="radio" value="no" />
+                <span class="text-base text-slate-700 dark:text-slate-300">No</span>
+              </label>
+            </div>
+          </div>
+          <!-- Submit Button -->
+          <div class="pt-4 text-center">
+            <button class="w-full md:w-auto min-w-[300px] bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-lg text-lg shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2 mx-auto" type="submit">
+              Submit Job Application
+              <span class="material-symbols-outlined">send</span>
+            </button>
+            <p class="mt-6 text-sm text-slate-500 dark:text-slate-400 font-medium">
+              <span class="material-symbols-outlined text-base align-middle mr-1">schedule</span>
+              Our team will contact you within 24–48 hours.
+            </p>
+          </div>
+        </form>
+      </div>
+      <!-- Additional Trust Text -->
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="p-4">
+          <span class="material-symbols-outlined text-primary text-3xl mb-2">location_on</span>
+          <h3 class="font-bold mb-1">Pithampur & Indore</h3>
+          <p class="text-xs text-slate-500">Local opportunities at your doorstep</p>
+        </div>
+        <div class="p-4">
+          <span class="material-symbols-outlined text-primary text-3xl mb-2">verified_user</span>
+          <h3 class="font-bold mb-1">Direct Hiring</h3>
+          <p class="text-xs text-slate-500">No middleman fees involved</p>
+        </div>
+        <div class="p-4">
+          <span class="material-symbols-outlined text-primary text-3xl mb-2">support_agent</span>
+          <h3 class="font-bold mb-1">Quick Support</h3>
+          <p class="text-xs text-slate-500">Dedicated assistance for all workers</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

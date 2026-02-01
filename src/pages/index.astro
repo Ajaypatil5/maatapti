@@ -1,17 +1,237 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Maa Tapti Enterprises - Industrial Labour Solutions">
+  <main class="max-w-[1280px] mx-auto px-4 lg:px-10">
+    <!-- Hero Section -->
+    <section class="py-12 md:py-20">
+      <div class="@container">
+        <div class="flex flex-col gap-10 @[864px]:flex-row items-center">
+          <div class="w-full @[864px]:w-1/2 order-2 @[864px]:order-1 flex flex-col gap-8">
+            <div class="flex flex-col gap-4">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-primary/10 text-primary w-fit">
+                Trusted in Pithampur & Indore
+              </span>
+              <h1 class="text-[#0d131b] dark:text-white text-4xl md:text-6xl font-black leading-[1.1] tracking-tight">
+                Skilled & Unskilled Labour Supply for Industries
+              </h1>
+              <p class="text-[#4c6c9a] dark:text-slate-400 text-lg leading-relaxed max-w-[540px]">
+                Reliable manpower solutions for manufacturing, logistics, and construction sectors. We bridge the gap between industrial excellence and high-quality human resources.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <a href="/apply-job" class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 md:h-14 px-8 bg-primary text-white text-base font-bold shadow-lg shadow-primary/20 hover:-translate-y-0.5 transition-all">
+                Apply for Job
+              </a>
+              <a href="/hire-labour" class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 md:h-14 px-8 bg-white dark:bg-slate-800 border border-[#cfd9e7] dark:border-slate-700 text-[#0d131b] dark:text-white text-base font-bold hover:bg-[#f8fafc] transition-all">
+                Hire Labour
+              </a>
+            </div>
+          </div>
+          <div class="w-full @[864px]:w-1/2 order-1 @[864px]:order-2">
+            <div class="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl group">
+              <div class="absolute inset-0 bg-primary/10 mix-blend-multiply transition-opacity group-hover:opacity-0"></div>
+              <img class="w-full h-full object-cover" alt="Modern industrial factory floor with workers in safety gear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFiOEUfUpUK4fn5LiWkNxRWX5g7CTnO8iOeFzy3o1bO8u_m2yr6Ze1-BZrhY0JCyAJ8KIOU2pGng3Qoz-FnIGdRX2o4RbDuvktubQaQUgMBVpSflII7QihQosy-9M3zdv1Fo6Jt_d7hxN7Viux_K9wCDZXTQBOuM9YYWyLHi3oGa2-JQw0eR5xLuGWgPcoe3Vpv6UEXQVBC6HKyqKUB7WisD6H0LCCcit9akpGId1yOlcnGfxckNBaQ89GbwSK-43Und15MIdpz0U" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 border-y border-[#e7ecf3] dark:border-slate-800">
+      <div class="flex flex-wrap gap-6">
+        <div class="flex min-w-[200px] flex-1 flex-col gap-2 rounded-xl p-8 bg-white dark:bg-slate-900 border border-[#cfd9e7] dark:border-slate-800 shadow-sm">
+          <p class="text-[#4c6c9a] dark:text-slate-400 text-sm font-semibold uppercase tracking-wider">Years Experience</p>
+          <div class="flex items-end gap-2">
+            <p class="text-[#0d131b] dark:text-white text-4xl font-black leading-none">10+</p>
+            <p class="text-[#07883b] text-sm font-bold mb-1">+100% Reliability</p>
+          </div>
+        </div>
+        <div class="flex min-w-[200px] flex-1 flex-col gap-2 rounded-xl p-8 bg-white dark:bg-slate-900 border border-[#cfd9e7] dark:border-slate-800 shadow-sm">
+          <p class="text-[#4c6c9a] dark:text-slate-400 text-sm font-semibold uppercase tracking-wider">Workers Placed</p>
+          <div class="flex items-end gap-2">
+            <p class="text-[#0d131b] dark:text-white text-4xl font-black leading-none">1,000+</p>
+            <p class="text-[#07883b] text-sm font-bold mb-1">+50% Annual Growth</p>
+          </div>
+        </div>
+        <div class="flex min-w-[200px] flex-1 flex-col gap-2 rounded-xl p-8 bg-white dark:bg-slate-900 border border-[#cfd9e7] dark:border-slate-800 shadow-sm">
+          <p class="text-[#4c6c9a] dark:text-slate-400 text-sm font-semibold uppercase tracking-wider">Active Clients</p>
+          <div class="flex items-end gap-2">
+            <p class="text-[#0d131b] dark:text-white text-4xl font-black leading-none">50+</p>
+            <p class="text-primary text-sm font-bold mb-1">Top Tier Industries</p>
+          </div>
+        </div>
+        <div class="flex min-w-[200px] flex-1 flex-col gap-2 rounded-xl p-8 bg-primary text-white shadow-xl shadow-primary/20">
+          <p class="text-white/80 text-sm font-semibold uppercase tracking-wider">Support</p>
+          <p class="text-white text-4xl font-black leading-none">24/7</p>
+          <p class="text-white/90 text-sm font-medium">Quick Onboarding</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Categories Section -->
+    <section class="py-20" id="services">
+      <div class="flex flex-col gap-12 @container">
+        <div class="flex flex-col gap-4 text-center items-center">
+          <h2 class="text-[#0d131b] dark:text-white text-3xl md:text-5xl font-black tracking-tight max-w-[800px]">
+            Our specialized manpower categories
+          </h2>
+          <p class="text-[#4c6c9a] dark:text-slate-400 text-lg max-w-[600px]">
+            We provide screened, verified, and trained personnel for every industrial vertical.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div class="flex flex-col gap-4 rounded-xl border border-[#cfd9e7] dark:border-slate-800 bg-white dark:bg-slate-900 p-6 hover:shadow-lg hover:border-primary/50 transition-all group">
+            <div class="bg-primary/10 text-primary w-12 h-12 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined">group</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <h3 class="text-[#0d131b] dark:text-white text-lg font-bold">Helpers</h3>
+              <p class="text-[#4c6c9a] dark:text-slate-400 text-sm leading-relaxed">General support for warehouse and factory operations.</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 rounded-xl border border-[#cfd9e7] dark:border-slate-800 bg-white dark:bg-slate-900 p-6 hover:shadow-lg hover:border-primary/50 transition-all group">
+            <div class="bg-primary/10 text-primary w-12 h-12 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined">construction</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <h3 class="text-[#0d131b] dark:text-white text-lg font-bold">ITI Technicians</h3>
+              <p class="text-[#4c6c9a] dark:text-slate-400 text-sm leading-relaxed">Diploma holders for specialized machine operations.</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 rounded-xl border border-[#cfd9e7] dark:border-slate-800 bg-white dark:bg-slate-900 p-6 hover:shadow-lg hover:border-primary/50 transition-all group">
+            <div class="bg-primary/10 text-primary w-12 h-12 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined">engineering</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <h3 class="text-[#0d131b] dark:text-white text-lg font-bold">Quality Engineers</h3>
+              <p class="text-[#4c6c9a] dark:text-slate-400 text-sm leading-relaxed">Ensuring precision and industrial standard compliance.</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 rounded-xl border border-[#cfd9e7] dark:border-slate-800 bg-white dark:bg-slate-900 p-6 hover:shadow-lg hover:border-primary/50 transition-all group">
+            <div class="bg-primary/10 text-primary w-12 h-12 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined">precision_manufacturing</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <h3 class="text-[#0d131b] dark:text-white text-lg font-bold">Welders</h3>
+              <p class="text-[#4c6c9a] dark:text-slate-400 text-sm leading-relaxed">Certified industrial welders (Arc, MIG, TIG).</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 rounded-xl border border-[#cfd9e7] dark:border-slate-800 bg-white dark:bg-slate-900 p-6 hover:shadow-lg hover:border-primary/50 transition-all group">
+            <div class="bg-primary/10 text-primary w-12 h-12 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined">cleaning_services</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <h3 class="text-[#0d131b] dark:text-white text-lg font-bold">Housekeeping</h3>
+              <p class="text-[#4c6c9a] dark:text-slate-400 text-sm leading-relaxed">Trained staff for industrial hygiene and cleaning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section (How it works) -->
+    <section class="py-20 bg-[#f8fafc] dark:bg-slate-900/50 rounded-3xl px-6 md:px-12" id="process">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div class="flex flex-col gap-8">
+          <h2 class="text-3xl font-black text-[#0d131b] dark:text-white">How it works</h2>
+          <p class="text-[#4c6c9a] dark:text-slate-400 text-lg">We've streamlined the hiring process to ensure speed and quality for both parties.</p>
+          <div class="flex flex-col gap-0">
+            <div class="grid grid-cols-[48px_1fr] gap-x-4">
+              <div class="flex flex-col items-center gap-1 pt-1">
+                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+                  <span class="material-symbols-outlined !text-[20px]">assignment_turned_in</span>
+                </div>
+                <div class="w-[2px] bg-primary/20 h-12"></div>
+              </div>
+              <div class="pb-8">
+                <h4 class="text-[#0d131b] dark:text-white text-lg font-bold">1. Submit Requirements</h4>
+                <p class="text-[#4c6c9a] dark:text-slate-400">Employers list vacancies; Candidates submit their basic details and skills.</p>
+              </div>
+              <div class="flex flex-col items-center gap-1 pt-1">
+                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+                  <span class="material-symbols-outlined !text-[20px]">fact_check</span>
+                </div>
+                <div class="w-[2px] bg-primary/20 h-12"></div>
+              </div>
+              <div class="pb-8">
+                <h4 class="text-[#0d131b] dark:text-white text-lg font-bold">2. Verification & Background Check</h4>
+                <p class="text-[#4c6c9a] dark:text-slate-400">Rigorous ID and skill validation to ensure high standards of safety and skill.</p>
+              </div>
+              <div class="flex flex-col items-center gap-1 pt-1">
+                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+                  <span class="material-symbols-outlined !text-[20px]">handshake</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-[#0d131b] dark:text-white text-lg font-bold">3. Rapid Onboarding</h4>
+                <p class="text-[#4c6c9a] dark:text-slate-400">Immediate placement in industrial sectors across Pithampur and Indore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Transparent Pricing/Salary Card -->
+        <div class="flex flex-col justify-center">
+          <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-primary/20 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16"></div>
+            <h3 class="text-2xl font-bold text-[#0d131b] dark:text-white mb-6 flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary">payments</span>
+              Earnings Potential
+            </h3>
+            <div class="space-y-6">
+              <div class="flex justify-between items-center p-4 rounded-lg bg-[#f8fafc] dark:bg-slate-800 border border-[#e7ecf3] dark:border-slate-700">
+                <div>
+                  <p class="font-bold text-[#0d131b] dark:text-white">Unskilled / Helpers</p>
+                  <p class="text-sm text-[#4c6c9a]">Entry level roles</p>
+                </div>
+                <div class="text-right">
+                  <p class="text-primary font-black">₹12,000 - 15,000</p>
+                  <p class="text-[10px] uppercase font-bold tracking-tighter text-[#4c6c9a]">Per Month + OT</p>
+                </div>
+              </div>
+              <div class="flex justify-between items-center p-4 rounded-lg bg-[#f8fafc] dark:bg-slate-800 border border-[#e7ecf3] dark:border-slate-700">
+                <div>
+                  <p class="font-bold text-[#0d131b] dark:text-white">Skilled / ITI / Welder</p>
+                  <p class="text-sm text-[#4c6c9a]">Trade certified</p>
+                </div>
+                <div class="text-right">
+                  <p class="text-primary font-black">₹18,000 - 28,000</p>
+                  <p class="text-[10px] uppercase font-bold tracking-tighter text-[#4c6c9a]">Per Month + Benefits</p>
+                </div>
+              </div>
+              <div class="p-4 rounded-lg bg-primary/10 border border-primary/20">
+                <p class="text-sm text-[#0d131b] dark:text-slate-300 italic">"We ensure timely salary disbursement via direct bank transfer and handle all compliance including PF and ESIC."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-24" id="contact">
+      <div class="bg-primary rounded-3xl p-8 md:p-16 text-center text-white relative overflow-hidden">
+        <!-- Abstract pattern overlays -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+          <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+        </div>
+        <div class="relative z-10 flex flex-col items-center gap-8">
+          <h2 class="text-4xl md:text-5xl font-black max-w-[800px] leading-tight">Ready to boost your industrial productivity or find a stable job?</h2>
+          <p class="text-white/80 text-lg max-w-[600px]">Get in touch with the region's most reliable labour contractor today. We are available on WhatsApp and Phone for immediate assistance.</p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a class="flex items-center gap-3 bg-white text-primary px-8 py-4 rounded-xl font-black shadow-xl hover:scale-105 transition-transform" href="tel:+919876543210">
+              <span class="material-symbols-outlined">call</span>
+              Call Now
+            </a>
+            <a class="flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-black shadow-xl hover:scale-105 transition-transform" href="https://wa.me/919876543210">
+              <span class="material-symbols-outlined">chat</span>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
